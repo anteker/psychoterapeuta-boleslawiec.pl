@@ -22,7 +22,7 @@ const TherapistProfile = () => {
               </h2>
               <div className="w-16 h-0.5 bg-primary mb-6" />
               <p className="text-muted-foreground italic leading-relaxed text-lg">
-                  Dyplomowany psychoterapeuta psychodynamiczny.
+                  Jestem dyplomowanym psychoterapeutą psychodynamicznym.
                  </p>
             </div>
 

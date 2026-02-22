@@ -8,7 +8,8 @@ const Banner = () => {
           src="/logo.png"
           alt="Psychoterapia"
           width={1900}
-          height={10000}
+          priority
+          height={1000}
           className="w-full h-full object-cover"
         />
       </div>

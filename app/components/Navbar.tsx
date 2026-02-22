@@ -39,7 +39,7 @@ const Navbar = () => {
           onClick={(e) => handleClick(e, "#")}
           className="flex items-center gap-2"
         >
-          <Image src="/logo.png" alt="Logo" width={60} height={60} className="h-10 w-auto" />
+          <Image src="/logo_nav.webp" alt="Logo" width={60} height={60} className="h-10 w-auto" />
           <span className="font-heading text-lg tracking-wide text-foreground">
             Gabinet Psychoterapii
           </span>
