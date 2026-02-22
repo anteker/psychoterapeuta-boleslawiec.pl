@@ -14,22 +14,24 @@ const navLinks = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleClick = useCallback(
-    (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-      e.preventDefault();
-      setIsOpen(false);
+const handleClick = useCallback(
+  (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    setIsOpen(false);
 
-      if (typeof document !== "undefined") {
+    if (typeof document !== "undefined") {
+      if (href === "#") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } else {
         const target = document.querySelector(href);
         if (target) {
           target.scrollIntoView({ behavior: "smooth" });
-        } else if (href === "#") {
-          window.scrollTo({ top: 0, behavior: "smooth" });
         }
       }
-    },
-    []
-  );
+    }
+  },
+  []
+);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-sm border-b border-border">
@@ -51,7 +53,7 @@ const Navbar = () => {
               key={link.href}
               href={link.href}
               onClick={(e) => handleClick(e, link.href)}
-              className="text-sm font-light tracking-widest uppercase text-muted-foreground hover:text-primary transition-colors"
+              className="text-sm font-light tracking-widest uppercase text-foreground hover:text-primary transition-colors"
             >
               {link.label}
             </a>
@@ -82,7 +84,7 @@ const Navbar = () => {
               key={link.href}
               href={link.href}
               onClick={(e) => handleClick(e, link.href)}
-              className="block text-sm tracking-widest uppercase text-muted-foreground hover:text-primary transition-colors"
+              className="block text-sm tracking-widest uppercase text-foreground hover:text-primary transition-colors"
             >
               {link.label}
             </a>
