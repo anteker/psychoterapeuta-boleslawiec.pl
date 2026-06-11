@@ -8,7 +8,7 @@ const ContactSection = () => {
           Zadbaj o swoje zdrowie psychiczne!
         </h2>
         <div className="w-16 h-0.5 bg-primary mx-auto mb-8" />
-        <p className="text-muted-foreground mb-12 text-lg font-light">
+        <p className="text-muted-foreground mb-12 text-lg font-normal">
           Umów się na pierwszą konsultację
         </p>
 
@@ -28,8 +28,8 @@ const ContactSection = () => {
               <Mail size={22} className="text-primary" />
             </div>
             <p className="text-sm tracking-widest uppercase text-muted-foreground">Email</p>
-            <a href="mailto:monika@erens.pl" className="text-foreground font-light hover:text-primary transition-colors">
-              monika@erens.pl
+            <a href="mailto:gabinet@erens.pl" className="text-foreground font-light hover:text-primary transition-colors">
+              gabinet@erens.pl
             </a>
           </div>
 

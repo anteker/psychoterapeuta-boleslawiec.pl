@@ -7,9 +7,9 @@ const TherapistProfile = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           <div className="flex justify-center lg:justify-end">
             <Image
-              src="/face.jpg"
-              width={100}
-              height={100}
+              src="/photo.jpeg"
+              width={2316}
+              height={3088}
               alt="Zdjęcie terapeuty"
               className="w-full max-w-md object-cover shadow-lg"
             />
@@ -31,7 +31,7 @@ const TherapistProfile = () => {
                 Kwalifikacje
               </h3>
               <div className="w-12 h-0.5 bg-primary mb-4" />
-              <div className="space-y-4 text-foreground leading-relaxed font-light">
+              <div className="space-y-4 text-foreground leading-relaxed font-normal">
                  <p>
                    Ukończyłam czteroletnią Szkołę Psychoterapii Psychodynamicznej 
                    w Krakowskim Centrum Psychodynamicznym, które jest akredytowane 
