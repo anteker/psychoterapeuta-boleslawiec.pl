@@ -18,14 +18,14 @@ const lato = Lato({
 
 
 export const metadata: Metadata = {
-    icons: {
-    icon: '/favicon.ico?v=2',
-  },
   title: "Psychoterapeuta Bolesławiec | Terapia indywidualna",
   description: "Profesjonalna psychoterapia w Bolesławcu. Terapia indywidualna i wsparcie emocjonalne.",
   robots: {
     index: true,
     follow: true,
+  },
+    icons: {
+    icon: '/favicon.ico?v=2',
   },
   openGraph: {
     title: "Psychoterapeuta Bolesławiec",
