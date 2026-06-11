@@ -1,6 +1,7 @@
 import { Cormorant_Garamond, Lato } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import type { Metadata } from "next";
 
 const cormorant = Cormorant_Garamond({ 
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="antialiased">
         {children}
       <Analytics />
+      <SpeedInsights/>
       </body>
     </html>
   );
