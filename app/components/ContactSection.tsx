@@ -39,7 +39,7 @@ const ContactSection = () => {
             </div>
             <p className="text-sm tracking-widest uppercase text-muted-foreground">Adres</p>
             <p className="text-foreground font-light">
-              Grunwaldzka 7/3, Drugie piętro, 59-700 Bolesławiec
+              
             </p>
           </div>
         </div>
